@@ -1,0 +1,53 @@
+<!-- Basic Objectives:
+A user selects rock, paper, or scissors
+
+Computer randomly chooses
+
+Display the user and computers choice on the screen
+
+Display the winner
+
+
+Bonus Objectives:
+Keep track of wins, losses, & ties
+
+hint: you can listen for the click event on any HTML element!
+
+Be able to start a new game without refreshing
+
+Color a win differently than a loss so it is easy to tell if the user won.
+hint: add and remove classes: http://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript(Links to an external site.) -->
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Welcome<br /> Ready to play Rock, Paper, Scissors.<br />
+    You will go up against our toughest competitor, Mac!<br />
+    Good Luck</h1>
+    <div class="selections">
+    <button class="selection" data-selections="rock">✊🏻</button>
+    <button class="selection" data-selections="paper"> ✋🏻</button>
+    <button class="selection" data-selections="scissor">✌🏻</button>
+  </div>
+  <div class="results">
+    <div>
+      You 
+      <span class="result-score" data-your-score>0</span>
+      
+  </div>
+  <div data final-column>
+    
+        Computer
+      <span class="result-score" data-your-score>0</span>
+  </div>
+    <div class="result-selection winner"> ✊🏻</div>
+    <div class="result-selection winner"> ✌🏻</div>
+</div>
+</body>
+</html>

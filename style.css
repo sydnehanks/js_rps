@@ -1,0 +1,56 @@
+body {
+  background-color: rgba(129, 123, 67, 0.479);
+  
+}
+h1 {
+  color: #423a08cb;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+
+.selection {
+  margin-top: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 4rem;
+  transition: 100ms;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.results {
+  margin-top: 20px;
+  font-size: 30px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  margin-left: 1rem;
+  font-size: 28px;
+  color: #2f36107a;
+
+}
+.result-selection {
+  opacity: 5%;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 3.5rem;
+}
